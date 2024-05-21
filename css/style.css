@@ -36,10 +36,10 @@ img{
      max-width: 100%;
      height: auto;
 }
-/* .section-padding{
+.section-padding{
     padding-top: 120px;
     padding-bottom: 120px;
-} */
+}
 section{
     display: block;
 }
@@ -106,7 +106,7 @@ text-transform: uppercase;
 color: #4d5ae5;
 
 display: block;
-padding: 16px 0;
+
 }
 .text-italic{
     color:  #2e2f42;
@@ -365,10 +365,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .benefits-list{
     display: flex;
     flex-direction: column;
-    gap: 72px;
-   
+    gap: 72px; 
 }
-
 .benefits-list-title{
     font-family: "Roboto", sans-serif;
 font-weight: 700;
@@ -431,6 +429,10 @@ color: #434455;
     }
     .benefits-list-text{
         font-weight: 400;
+    }
+    .section-padding{
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 /* =========OUR TEAM================ */
@@ -555,6 +557,10 @@ color: #434455;
     .reviews-list-item{
         width: calc((100% - 72px) / 4);
     }
+    .section-padding{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 /* ===================OUR PORTFOLIO================= */
@@ -652,6 +658,10 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .portfolio-item{
         width: calc((100% - 48px) / 3);
     }
+    .section-padding{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 /* ============FOOTER=========== */
@@ -669,9 +679,7 @@ footer{
     gap: 72px;
 }
 
-.footer-logo{
-    margin-bottom: 72px;
-}
+
 .page-logo-footer{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -816,7 +824,13 @@ a {
 /* ===============FOOTER-TABLET======================= */
 @media screen and (min-width:768px){
     .page-footer {
-        padding: 96px 108px;
+        padding: 96px;
+}
+@media screen and (min-width:768px) and (max-width:1157px)
+ {
+    .footer-container{
+        width: 584px;
+    }
 }
 .footer-container{
     flex-direction: row;
@@ -834,6 +848,12 @@ a {
 }
 .subscribe-form-input{
     width: 264px;
+}
+.footer-logo{
+    text-align: start;
+}
+.social-container{
+    text-align: start;
 }
 }
 /* ============FOOTER-DESKTOP============================ */
@@ -1140,7 +1160,7 @@ a {
             padding-bottom: 40px;
             position: relative;
             display: flex;
-            width: 100%;
+            height: 100%;
             flex-direction: column;
         }
         .momile-menu-close-btn{
